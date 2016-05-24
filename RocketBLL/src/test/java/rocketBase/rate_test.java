@@ -32,7 +32,7 @@ public class rate_test {
 		assertEquals(RateBLL.getRate(355), 0.00, 0.01);
 	}
 	
-	//Loan Test
+	//Loan Test 
 	@Test
 	public void IncomeCheckTest() {
 		LoanRequest lq_1 = new LoanRequest();
