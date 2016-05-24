@@ -8,7 +8,6 @@ public class RateDomainModel {
 	
 	public RateDomainModel()
 	{
-		
 	}
 
 	public int getiRateID() {

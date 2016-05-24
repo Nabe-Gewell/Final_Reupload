@@ -23,12 +23,7 @@ public class RateDAL {
 		ArrayList<RateDomainModel> alRates = new ArrayList<RateDomainModel>();		
 		
 		try {
-			tx = session.beginTransaction();	
-			//no
-			//TODO - RocketDALRateDAL.getAllRates
-			//			probably not a bad idea to sort the results...  Add an OrderBy
-			//			example can be found here:
-			//  		http://www.tutorialspoint.com/hibernate/hibernate_query_language.htm			
+			tx = session.beginTransaction();			
 			List lstRates = session.createQuery("FROM RateDomainModel").list();
 			for (Iterator iterator = lstRates.iterator(); iterator.hasNext();) {
 				RateDomainModel rte = (RateDomainModel) iterator.next();
