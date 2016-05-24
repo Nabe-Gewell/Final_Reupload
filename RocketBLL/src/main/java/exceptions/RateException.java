@@ -14,4 +14,4 @@ public class RateException extends Exception {
 	public RateDomainModel getRateDomainModel() {
 		return RateDomainModel;
 	}	
-}
+} 

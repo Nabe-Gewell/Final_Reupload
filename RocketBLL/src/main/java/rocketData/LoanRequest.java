@@ -12,7 +12,7 @@ public class LoanRequest implements Serializable {
 	private double dPayment;
 	private double Income;
 	private double Expenses;
-	
+	 
 	
 	public double getIncome() {
 		return Income;
