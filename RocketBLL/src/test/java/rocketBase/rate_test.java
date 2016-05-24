@@ -8,6 +8,8 @@ import exceptions.RateException;
 import rocketData.LoanRequest;
 
 public class rate_test {
+	
+	//Interest Rate and Rate Exception
 
 	@Test
 	public void RateTest(){
@@ -29,13 +31,8 @@ public class rate_test {
 		assertEquals(RateBLL.getRate(100), 0.00, 0.01);
 		assertEquals(RateBLL.getRate(355), 0.00, 0.01);
 	}
-
-	@Test
-	public void PaymentTest() {
-		assertEquals(RateBLL.getPayment(0.04, 360, 300000, 0.0, false), 1432.25, 0.01);
-		assertEquals(RateBLL.getPayment(0.03, 360, 1000000, 0.0, false),4216.04, 0.01);
-	}
 	
+	//Loan Test
 	@Test
 	public void IncomeCheckTest() {
 		LoanRequest lq_1 = new LoanRequest();
